@@ -20,7 +20,7 @@ function generateRandomString(length) {
 // Used to create a valid session id
 let state = generateRandomString(16);
 
-const AUTH_URL = `https://accounts.spotify.com/authorize?client_id=dbec15ad30154427ad0efcbdb3d78cfe&response_type=code&redirect_uri=http://localhost:5173/&state=${state}&scope=user-read-private%20user-read-email%20user-top-read&show_dialog=true`;
+const AUTH_URL = `https://accounts.spotify.com/authorize?client_id=${import.meta.env.VITE_CLIENT_ID}&response_type=code&redirect_uri=http://localhost:5173/&state=${state}&scope=user-read-private%20user-read-email%20user-top-read&show_dialog=true`;
 
 const Login = () => {
   return (

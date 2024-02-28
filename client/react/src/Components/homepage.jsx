@@ -6,7 +6,7 @@ import Header from "./header";
 import OptionSelect from "./optionSelect";
 
 const spotifyApi = new SpotifyWebApi({
-  clientId: "dbec15ad30154427ad0efcbdb3d78cfe",
+  clientId: import.meta.env.VITE_CLIENT_ID,
 });
 
 const Homepage = () => {
